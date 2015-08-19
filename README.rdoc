@@ -1,5 +1,10 @@
 == README
 
+Watch the following video for the tutorial
+ Deploying to a VPS
+
+https://www.youtube.com/watch?v=pgWWUrI9ZCs
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
