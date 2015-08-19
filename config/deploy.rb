@@ -1,5 +1,6 @@
 require "bundler/capistrano"
 
+set :ssh_options, { keys: ["#{ENV['HOME']}/.ssh/fms_computer.pem"] }
 server "54.149.247.147", :web, :app, :db, primary: true
 
 set :application, "nginx_test_app"
