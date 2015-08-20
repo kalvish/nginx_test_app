@@ -13,7 +13,20 @@ Had to manually create the symlink after deploy:setup
 The above will fix the symlink from red to light blue.
 4. Then run cap deploy:cold on your local machine
 
+Things to remember
+1. Add ssh + http inbound rules in AWS
 
+Add secret key to the environment:
+1. go to server
+2. RAILS_ENV=production bundle exec rake secret
+3.
+for further details check here https://gist.github.com/pablosalgadom/4d75f30517edc6230a67
+
+
+other commands to start the app
+sudo service nginx restart
+sudo update-rc.d unicorn_nginx_test_app defaults
+ 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
