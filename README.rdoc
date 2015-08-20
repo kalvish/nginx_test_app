@@ -1,9 +1,18 @@
 == README
 
 Watch the following video for the tutorial
- Deploying to a VPS
+ Deploying to a VPS Railcast #335
 
 https://www.youtube.com/watch?v=pgWWUrI9ZCs
+
+Had to manually create the symlink after deploy:setup
+
+1. Run cap deploy:setup
+2. ssh to server, make user a root user
+3. then run , sudo ln -nfs ~/apps/nginx_test_app/current/config/unicorn.init.sh /etc/init.d/unicorn_nginx_test_app
+The above will fix the symlink from red to light blue.
+4. Then run cap deploy:cold on your local machine
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
