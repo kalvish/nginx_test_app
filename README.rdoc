@@ -26,7 +26,10 @@ for further details check here https://gist.github.com/pablosalgadom/4d75f30517e
 other commands to start the app
 sudo service nginx restart
 sudo update-rc.d unicorn_nginx_test_app defaults
- 
+
+give admin rights to a user in linux
+sudo usermod -a -G sudo hduser 
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
